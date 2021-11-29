@@ -1,0 +1,76 @@
+#import tkinter
+import tkinter as tk
+#import the raspberrypi GPIO pins
+#import sleep for time
+import RPi.GPIO as GPIO
+from time import sleep
+
+GPIO.setmode(GPIO.BOARD)
+
+
+#need a function for the motor, then call it in the button 
+def run_motor():
+    Motor1A = 16
+    Motor1B = 18
+    Motor1E = 22
+ 
+    GPIO.setup(Motor1A,GPIO.OUT)
+    GPIO.setup(Motor1B,GPIO.OUT)
+    GPIO.setup(Motor1E,GPIO.OUT)
+ 
+    print ("Turning motor on")
+    GPIO.output(Motor1A,GPIO.HIGH)
+    GPIO.output(Motor1B,GPIO.LOW)
+    GPIO.output(Motor1E,GPIO.HIGH)
+ 
+    sleep(2)
+ 
+    print ("Stopping motor")
+    GPIO.output(Motor1E,GPIO.LOW)
+ 
+    GPIO.cleanup()
+    import RPi.GPIO as GPIO
+    from time import sleep
+ 
+    GPIO.setmode(GPIO.BOARD)
+ 
+    Motor1A = 16
+    Motor1B = 18
+    Motor1E = 22
+ 
+    GPIO.setup(Motor1A,GPIO.OUT)
+    GPIO.setup(Motor1B,GPIO.OUT)
+    GPIO.setup(Motor1E,GPIO.OUT)
+ 
+    print ("Going forwards")
+    GPIO.output(Motor1A,GPIO.HIGH)
+    GPIO.output(Motor1B,GPIO.LOW)
+    GPIO.output(Motor1E,GPIO.HIGH)
+ 
+    sleep(2)
+
+    print ("Going backwards")
+    GPIO.output(Motor1A,GPIO.LOW)
+    GPIO.output(Motor1B,GPIO.HIGH)
+    GPIO.output(Motor1E,GPIO.HIGH)
+ 
+    sleep(2)
+ 
+    print ("Now stop")
+    GPIO.output(Motor1E,GPIO.LOW)
+ 
+    GPIO.cleanup()
+    
+
+
+
+#create a window to build off of
+window = tk.Tk()
+
+#create a label for the window
+button = tk.Button(text = "Motor", command = run_motor)
+
+#pack compiles everything together
+button.pack()
+
+window.mainloop()
