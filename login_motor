@@ -31,62 +31,52 @@ storage = firebase.storage()
 def run_motor():
 
 #push data to login then the motor runs
-email2 = entry.get()
-password2 = entry2.get()
-data_ep = {"Email": email2, "Password": password2}
-auth.sign_in_with_email_and_password(email2,password2)
+    email2 = entry.get()
+    password2 = entry2.get()
+    data_ep = {"Email": email2, "Password": password2}
+    auth.sign_in_with_email_and_password(email2,password2)
 
 
 #!/usr/bin/env python
 
-# Import required modules
-import time
-import RPi.GPIO as GPIO
 
-# Declare the GPIO settings
-GPIO.setmode(GPIO.BOARD)
 
 # set up GPIO pins
-GPIO.setup(7, GPIO.OUT) # Connected to PWMA
-GPIO.setup(11, GPIO.OUT) # Connected to AIN2
-GPIO.setup(12, GPIO.OUT) # Connected to AIN1
-GPIO.setup(13, GPIO.OUT) # Connected to STBY
+    GPIO.setup(7, GPIO.OUT) # Connected to PWMA
+    GPIO.setup(11, GPIO.OUT) # Connected to AIN2
+
 
 # Drive the motor clockwise
-Print("Clockwise")
-GPIO.output(12, GPIO.HIGH) # Set AIN1
-GPIO.output(11, GPIO.LOW) # Set AIN2
+    print("Clockwise")
+    GPIO.output(11, GPIO.LOW) # Set AIN2
 
 # Set the motor speed
-GPIO.output(7, GPIO.HIGH) # Set PWMA
+    GPIO.output(7, GPIO.HIGH) # Set PWMA
 
-# Disable STBY (standby)
-GPIO.output(13, GPIO.HIGH)
 
 # Wait 5 seconds
-print("wait 5 seconds")
-time.sleep(5)
+    print("wait 5 seconds")
+    time.sleep(5)
 
 # Drive the motor counterclockwise
-print("counterclockwise")
-GPIO.output(12, GPIO.LOW) # Set AIN1
-GPIO.output(11, GPIO.HIGH) # Set AIN2
+    print("counterclockwise")
+    
+    GPIO.output(11, GPIO.HIGH) # Set AIN2
 
 # Set the motor speed
-GPIO.output(7, GPIO.HIGH) # Set PWMA
+    GPIO.output(7, GPIO.HIGH) # Set PWMA
 
-# Disable STBY (standby)
-GPIO.output(13, GPIO.HIGH)
+
 
 # Wait 5 seconds
-print("wait 5 seconds")
-time.sleep(5)
+    print("wait 5 seconds")
+    time.sleep(5)
 
 # Reset all the GPIO pins by setting them to LOW
-GPIO.output(12, GPIO.LOW) # Set AIN1
-GPIO.output(11, GPIO.LOW) # Set AIN2
-GPIO.output(7, GPIO.LOW) # Set PWMA
-GPIO.output(13, GPIO.LOW) # Set STBY
+
+    GPIO.output(11, GPIO.LOW) # Set AIN2
+    GPIO.output(7, GPIO.LOW) # Set PWMA
+
 
 
 # Tkinter Window
