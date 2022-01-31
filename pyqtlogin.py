@@ -40,6 +40,7 @@ class SignUp(QDialog):
         #the loginbutton on QDialog (self) will execute accessLogin function when it is clicked
         self.subutton.clicked.connect(self.accessSU)
         self.subutton.clicked.connect(self.gotomain)
+        self.ihaveacct_button.clicked.connect(self.HaveAnAcct)
 
     def accessSU(self):
         ea_user= self.easu.text()
@@ -51,34 +52,29 @@ class SignUp(QDialog):
         mainmenu = MainMenu()
         widget.addWidget(mainmenu)
         widget.setCurrentIndex(widget.currentIndex()+1)
-        
+    
+    def HaveAnAcct(self):
+       login = Login()
+       widget.addWidget(login)
+       widget.setCurrentIndex(widget.currentIndex()+1)
+ 
 
-
-#will inherit from QDialog which is the screen
-#This class will take everything from QDialog
-class Login(QDialog):
+class Verify(QDialog):
     def __init__(self):
-        super(Login,self).__init__()
-        #loads .ui file into code
-        loadUi("login.ui",self)
-        #the loginbutton on QDialog (self) will execute accessLogin function when it is clicked
-        self.loginbutton.clicked.connect(self.accessLI)
-        self.loginbutton.clicked.connect(self.gotomain)
-       
-    #This function will take the email and password
-    def accessLI(self):
+        super(Verify,self).__init__()
+        loadUi("verify.ui",self)
+        self.verifybutton.clicked.connect(self.runMotor)
+        self.backtoMain2.clicked.connect(self.gotomain)
+
+    #def runMotor, all the stuff for the motor
+    #if info is right, just one click and dispense, if not, try again
+    
+    
+    def runMotor(self):
         ea_li= self.ea_lo.text()
         password_li = self.pw_lo.text()
         auth.sign_in_with_email_and_password(ea_li,password_li)
-        print("Successful login")
-
-
-    def gotomain(self):
-        mainmenu = MainMenu()
-        widget.addWidget(mainmenu)
-        widget.setCurrentIndex(widget.currentIndex()+2) #####
-    
-    def runMotor(self):
+        
         GPIO.setmode(GPIO.BOARD)
         GPIO.setwarnings(False)
 
@@ -91,33 +87,33 @@ class Login(QDialog):
             GPIO.setup(pin,GPIO.OUT)
             GPIO.output(pin, False)
 
-aSequence = [
-    [1,0,0,1],
-    [1,0,0,0],
-    [1,1,0,0],
-    [0,1,0,0],
-    [0,1,1,0],
-    [0,0,1,0],
-    [0,0,1,1],
-    [0,0,0,1]
-]
+        aSequence = [
+            [1,0,0,1],
+            [1,0,0,0],
+            [1,1,0,0],
+            [0,1,0,0],
+            [0,1,1,0],
+            [0,0,1,0],
+            [0,0,1,1],
+            [0,0,0,1]
+       ]
         
-iNumSteps = len(aSequence)
+        iNumSteps = len(aSequence)
 
 ##if sys.argv[3] == "cw":
-iDirection = 1
+        iDirection = 1
 ##else:
 ##  iDirection = -1
 
-fWaitTime = int(1) / float(1000)
+        fWaitTime = int(1) / float(1000)
 
-iDeg = int(int(45) * 11.377777777777)
+        iDeg = int(int(45) * 11.377777777777)
 
-iSeqPos = 0
+        iSeqPos = 0
 # If the fourth argument is present, it means that the motor should start at a
 # specific position from the aSequence list
-if len(sys.argv) > 4:
-    iSeqPos = int(sys.argv[4])
+        if len(sys.argv) > 4:
+            iSeqPos = int(sys.argv[4])
 
 # 1024 steps is 90 degrees
 # 4096 steps is 360 degrees
@@ -131,24 +127,56 @@ if len(sys.argv) > 4:
                 else:
                     GPIO.output(iRealPin, False)
  
-    iSeqPos += iDirection
+        iSeqPos += iDirection
  
-    if (iSeqPos >= iNumSteps):
-        iSeqPos = 0
-    if (iSeqPos < 0):
-        iSeqPos = iNumSteps + iDirection
+        if (iSeqPos >= iNumSteps):
+            iSeqPos = 0
+        if (iSeqPos < 0):
+            iSeqPos = iNumSteps + iDirection
  
     # Time to wait between steps
-    time.sleep(fWaitTime)
+            time.sleep(fWaitTime)
 
-for pin in aMotorPins:
-    GPIO.output(pin, False)
+        for pin in aMotorPins:
+        GPIO.output(pin, False)
 
 # Print the position from the aSequence list which should have been the
 # next position, if the previous loop was not ended
 # Need to catch this output when running from another script
 
 ##print (iSeqPos)
+       
+        
+        
+        
+
+    def gotomain(self):
+        mainmenu = MainMenu()
+        widget.addWidget(mainmenu)
+        widget.setCurrentIndex(widget.currentIndex()+1)
+
+
+        
+
+
+#will inherit from QDialog which is the screen
+#This class will take everything from QDialog
+class Login(QDialog):
+    def __init__(self):
+        super(Login,self).__init__()
+        #loads .ui file into code
+        loadUi("login.ui",self)
+        #the loginbutton on QDialog (self) will execute accessLogin function when it is clicked
+        self.loginbutton.clicked.connect(self.accessLI)
+        
+       
+    #This function will take the email and password
+    def accessLI(self):
+        ea_li= self.ea_lo.text()
+        password_li = self.pw_lo.text()
+        auth.sign_in_with_email_and_password(ea_li,password_li)
+        print("Successful login")
+     
 
     
   class MainMenu(QDialog):
@@ -220,13 +248,6 @@ class MedInfo(QDialog):
         mainmenu = MainMenu()
         widget.addWidget(mainmenu)
         widget.setCurrentIndex(widget.currentIndex()+2)
-
-
-
-
-
-    
-
 
 
  
