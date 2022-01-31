@@ -8,8 +8,8 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget
 
 #importing raspberrypi 
-import RPi.GPIO as GPIO
-import time import sleep
+#import RPi.GPIO as GPIO
+#import time import sleep
 
 import pyrebase
 
@@ -28,6 +28,29 @@ firebase = pyrebase.initialize_app(firebaseConfig)
 
 db = firebase.database()
 auth = firebase.auth()
+storage = firebase.storage()
+
+
+class SignUp(QDialog):
+    def __init__(self):
+        super(SignUp,self).__init__()
+        #loads .ui file into code
+        loadUi("signup.ui",self)
+        #the loginbutton on QDialog (self) will execute accessLogin function when it is clicked
+        self.subutton.clicked.connect(self.accessSU)
+        self.subutton.clicked.connect(self.gotomain)
+
+    def accessSU(self):
+        ea_user= self.easu.text()
+        password_user = self.passwordsu.text()
+        auth.create_user_with_email_and_password(ea_user,password_user)
+        print("successful creation") 
+
+    def gotomain(self):
+        mainmenu = MainMenu()
+        widget.addWidget(mainmenu)
+        widget.setCurrentIndex(widget.currentIndex()+1)
+        
 
 
 #will inherit from QDialog which is the screen
@@ -39,7 +62,8 @@ class Login(QDialog):
         loadUi("login.ui",self)
         #the loginbutton on QDialog (self) will execute accessLogin function when it is clicked
         self.loginbutton.clicked.connect(self.accessLI)
-
+        self.loginbutton.clicked.connect(self.gotomain)
+       
     #This function will take the email and password
     def accessLI(self):
         ea_li= self.ea_lo.text()
@@ -47,41 +71,90 @@ class Login(QDialog):
         auth.sign_in_with_email_and_password(ea_li,password_li)
         print("Successful login")
 
-        # set up GPIO pins
-        GPIO.setup(7, GPIO.OUT) # Connected to PWMA
-        GPIO.setup(11, GPIO.OUT) # Connected to AIN2
 
+    def gotomain(self):
+        mainmenu = MainMenu()
+        widget.addWidget(mainmenu)
+        widget.setCurrentIndex(widget.currentIndex()+2) #####
 
-# Drive the motor clockwise
-        print("Clockwise")
-        GPIO.output(11, GPIO.LOW) # Set AIN2
-
-# Set the motor speed
-        GPIO.output(7, GPIO.HIGH) # Set PWMA
-
-
-# Wait 5 seconds
-        print("wait 5 seconds")
-        time.sleep(5)
-
-# Drive the motor counterclockwise
-        print("counterclockwise")
     
-        GPIO.output(11, GPIO.HIGH) # Set AIN2
+class MainMenu(QDialog):
+    def __init__(self):
+        super(MainMenu,self).__init__()
+        loadUi("mainmenu.ui",self)
+        self.profilebutton.clicked.connect(self.gotoprofile)
+        self.medinfobutton.clicked.connect(self.gotoMedInfo)
+        self.loutmain.clicked.connect(self.gotoLoginScreen)
 
-# Set the motor speed
-        GPIO.output(7, GPIO.HIGH) # Set PWMA
+
+    def gotoprofile(self):
+        yourpro = YourProfile()
+        widget.addWidget(yourpro)
+        widget.setCurrentIndex(widget.currentIndex()+2)
+
+    def gotoMedInfo(self):
+        medinfo = MedInfo()
+        widget.addWidget(medinfo)
+        widget.setCurrentIndex(widget.currentIndex()+2)
+
+    def gotoLoginScreen(self):
+        login = Login()
+        widget.addWidget(login)
+        widget.setCurrentIndex(widget.currentIndex()+2)
+
+        
+class YourProfile(QDialog):
+    def __init__(self):
+        super(YourProfile,self).__init__()
+        loadUi("yourprofile.ui",self)
+        self.bmain1.clicked.connect(self.gotomain2)
+        #update prfile button push to firbease with updatePro
+  
+    def gotoprofile(self):
+        yourpro = YourProfile()
+        widget.addWidget(yourpro)
+        widget.setCurrentIndex(widget.currentIndex()+2)
+
+    def gotomain2(self):
+        mainmenu = MainMenu()
+        widget.addWidget(mainmenu)
+        widget.setCurrentIndex(widget.currentIndex()+2)
+
+
+class MedInfo(QDialog):
+    def __init__(self):
+        super(MedInfo,self).__init__()
+        loadUi("MedInfo.ui",self)
+        self.refreshMedbutton.clicked.connect(self.updateInfo)
+        self.backtoMain3.clicked.connect(self.gotomain3)
+
+    def updateInfo(self):
+        med1 = self.m1.text()
+        t1 = self.mt1.text()
+        med2 = self.m2.text()
+        t2 = self.mt2.text()
+        med3 = self.m3.text()
+        t3 = self.mt3.text()
+        med4 = self.m4.text()
+        t4 = self.mt4.text()
+        data = {"medication 1":med1,"time 1":t1,"medication 2":med2,"time 2":t2};
+        db.child("Medication Information").push(data);
+        #push this data
+        #Display little thing saying information successfully updated
+        #if user has information just replace it
+    
+    def gotomain3(self):
+        mainmenu = MainMenu()
+        widget.addWidget(mainmenu)
+        widget.setCurrentIndex(widget.currentIndex()+2)
 
 
 
-# Wait 5 seconds
-        print("wait 5 seconds")
-        time.sleep(5)
 
-# Reset all the GPIO pins by setting them to LOW
 
-        GPIO.output(11, GPIO.LOW) # Set AIN2
-        GPIO.output(7, GPIO.LOW) # Set PWMA
+    
+
+
 
  
 ##category of "User Account Info" for all users
@@ -90,13 +163,13 @@ class Login(QDialog):
 #main
 #this is for the actual widget
 app = QApplication(sys.argv) #always need this to launch the app, pass command line arguments to it
-LI = Login()
+SIU= SignUp()
 
 #stacking on top of this widget called widget
 widget = QStackedWidget()
-widget.addWidget(LI)
-widget.setFixedHeight(300)
-widget.setFixedWidth(400)
+widget.addWidget(SIU)
+#widget.setFixedHeight(300)
+#widget.setFixedWidth(300)
 widget.show()
 
 try:
