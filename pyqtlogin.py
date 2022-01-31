@@ -168,6 +168,7 @@ class Login(QDialog):
         loadUi("login.ui",self)
         #the loginbutton on QDialog (self) will execute accessLogin function when it is clicked
         self.loginbutton.clicked.connect(self.accessLI)
+        self.backtoSU.clicked.connect(self.backtoSignUp)
         
        
     #This function will take the email and password
@@ -176,6 +177,11 @@ class Login(QDialog):
         password_li = self.pw_lo.text()
         auth.sign_in_with_email_and_password(ea_li,password_li)
         print("Successful login")
+    
+    def backtoSignUp(self):
+        signup = SignUp()
+        widget.addWidget(signup)
+        widget.setCurrentIndex(widget.currentIndex()+1)
      
 
     
