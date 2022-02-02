@@ -184,6 +184,22 @@
     <string>Back to Main</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="verifyItsYou">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>300</y>
+     <width>131</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:red</string>
+   </property>
+   <property name="text">
+    <string>Verify It's You</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
