@@ -1,0 +1,64 @@
+import RPi.GPIO as GPIO
+from RpiMotorLib import RpiMotorLib
+import time
+from collections import Counter
+
+GPIO.setwarnings(False)
+
+################################
+# RPi and Motor Pre-allocations
+################################
+
+#def motor():
+#define GPIO pins
+direction= 22 # Direction (DIR) GPIO Pin
+step = 23 # Step GPIO Pin
+EN_pin = 24 # enable pin (LOW to enable)
+
+# Declare a instance of class pass GPIO pins numbers and the motor type
+mymotortest = RpiMotorLib.A4988Nema(direction, step, (21,21,21), "DRV8825")
+GPIO.setup(EN_pin,GPIO.OUT) # set enable pin as output
+
+###########################
+# Actual motor control
+###########################
+#
+GPIO.output(EN_pin,GPIO.LOW) # pull enable to low to enable motor
+mymotortest.motor_go(False, # True=Clockwise, False=Counter-Clockwise
+                     "Full" , # Step type (Full,Half,1/4,1/8,1/16,1/32)
+                     2000, # number of steps
+                     .0005, # step delay [sec]
+                     False, # True = print verbose output 
+                     .05) # initial delay [sec]
+print("run")
+
+#def light():
+pin = 5
+counter=50 
+GPIO.setup(pin,GPIO.IN)
+
+try:
+    while True:
+        if GPIO.input(pin) >=1:
+            time.sleep(.1)
+           
+            tend=time.time() +1*1
+            while time.time() < tend:
+                 i=GPIO.input(pin)
+                 if i==True:
+                     counter=counter-1
+                     print(counter)
+                     if counter==0:
+                         print('slot is empty, needs to refill pills')
+                         GPIO.cleanup()
+            
+                     break
+        else:
+        
+            pass
+  
+except  KeyboardInterrupt:
+    GPIO.cleanup()
+## verification
+    
+
