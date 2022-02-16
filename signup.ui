@@ -27,8 +27,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(118, 115, 103)
-</string>
+    <string notr="true">background-color:rgb(84, 116, 197)</string>
    </property>
    <property name="text">
     <string>Email Address</string>
@@ -44,7 +43,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(118, 115, 103)
+    <string notr="true">background-color:rgb(84, 116, 197)
 </string>
    </property>
    <property name="text">
@@ -56,12 +55,12 @@
     <rect>
      <x>140</x>
      <y>20</y>
-     <width>101</width>
-     <height>21</height>
+     <width>111</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(118, 115, 103)
+    <string notr="true">font: 700 italic 26pt &quot;Georgia&quot;;
 </string>
    </property>
    <property name="text">
@@ -125,7 +124,7 @@ rgb(255, 255, 255)</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(118, 115, 103)
+    <string notr="true">background-color:rgb(84, 116, 197)
 </string>
    </property>
    <property name="text">
@@ -156,8 +155,7 @@ rgb(255, 255, 255)</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(118, 115, 103)
-</string>
+    <string notr="true">background-color:rgb(84, 116, 197)</string>
    </property>
    <property name="text">
     <string>First name</string>
@@ -173,8 +171,7 @@ rgb(255, 255, 255)</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(118, 115, 103)
-</string>
+    <string notr="true">background-color:rgb(84, 116, 197)</string>
    </property>
    <property name="text">
     <string>Last name</string>
@@ -183,14 +180,14 @@ rgb(255, 255, 255)</string>
   <widget class="QLabel" name="DOBlabel">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>30</x>
      <y>180</y>
-     <width>171</width>
+     <width>181</width>
      <height>21</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(118, 115, 103)
+    <string notr="true">background-color:rgb(84, 116, 197)
 </string>
    </property>
    <property name="text">
@@ -258,7 +255,7 @@ rgb(255, 255, 255)</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(84, 116, 197)</string>
+    <string notr="true">background-color:rgb(17, 85, 204)</string>
    </property>
    <property name="text">
     <string>I have an account</string>
