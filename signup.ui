@@ -14,7 +14,8 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:rgb(134, 223, 204)</string>
+   <string notr="true">background-color: rgb(156, 211, 255)
+</string>
   </property>
   <widget class="QLabel" name="ea">
    <property name="geometry">
@@ -77,7 +78,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(255, 105, 127)</string>
+    <string notr="true">background-color:rgb(184, 210, 146)</string>
    </property>
    <property name="text">
     <string>Sign up!</string>
@@ -114,7 +115,7 @@ rgb(255, 255, 255)</string>
 rgb(255, 255, 255)</string>
    </property>
   </widget>
-  <widget class="QLabel" name="password_2">
+  <widget class="QLabel" name="cpassword">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -162,7 +163,7 @@ rgb(255, 255, 255)</string>
     <string>First name</string>
    </property>
   </widget>
-  <widget class="QLabel" name="ea_3">
+  <widget class="QLabel" name="lastnamelabel">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -179,7 +180,7 @@ rgb(255, 255, 255)</string>
     <string>Last name</string>
    </property>
   </widget>
-  <widget class="QLabel" name="ea_4">
+  <widget class="QLabel" name="DOBlabel">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -196,7 +197,7 @@ rgb(255, 255, 255)</string>
     <string>Date of birth (MM/DD/YYYY)</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="easu_3">
+  <widget class="QLineEdit" name="DOB">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -213,7 +214,7 @@ rgb(255, 255, 255)</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLineEdit" name="easu_4">
+  <widget class="QLineEdit" name="lastname">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -230,7 +231,7 @@ rgb(255, 255, 255)</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLineEdit" name="easu_5">
+  <widget class="QLineEdit" name="firstname">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -257,7 +258,7 @@ rgb(255, 255, 255)</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(255, 105, 127)</string>
+    <string notr="true">background-color:rgb(84, 116, 197)</string>
    </property>
    <property name="text">
     <string>I have an account</string>

@@ -14,16 +14,20 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background:rgb(134, 223, 204)</string>
+   <string notr="true">background:rgb(156, 211, 255)
+</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>10</y>
+     <x>120</x>
+     <y>20</y>
      <width>161</width>
-     <height>16</height>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 italic 23pt &quot;Georgia&quot;;</string>
    </property>
    <property name="text">
     <string>Your profile!</string>
@@ -55,7 +59,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background:red</string>
+    <string notr="true">background: rgb(84, 116, 197)</string>
    </property>
    <property name="text">
     <string>Update Profile</string>
@@ -132,7 +136,7 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>60</x>
      <y>170</y>
      <width>91</width>
      <height>20</height>

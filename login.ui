@@ -14,7 +14,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background:rgb(134, 223, 204)</string>
+   <string notr="true">background:rgb(156, 211, 255)</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -100,7 +100,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background:rgb(241, 98, 173)</string>
+    <string notr="true">background:rgb(17, 85, 204)</string>
    </property>
    <property name="text">
     <string>Login!</string>
@@ -132,7 +132,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background:rgb(241, 98, 173)</string>
+    <string notr="true">background:rgb(17, 85, 204)</string>
    </property>
    <property name="text">
     <string>Sign up!</string>
