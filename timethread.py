@@ -14,23 +14,15 @@ from email.message import EmailMessage
 
 
 from PyQt5.QtCore import QObject,QThread,pyqtSignal
-# Snip...
 
-# Step 1: Create a worker class
 
-###
+# https://www.youtube.com/watch?v=k5tIk7w50L4   first video watched
+# https://www.youtube.com/watch?v=G7ffF0U36b0 second video watched
 
-####
-
-now = datetime.now()
-
-current_hour = int(now.strftime("%H"))
-current_min = int(now.strftime("%M"))
-current_sec = int(now.strftime("%S"))
 
 ####just define a time right now and see if it will work that way
 uHour = 13;
-uMin = 7;
+uMin = 56;
 
 
 
@@ -53,67 +45,68 @@ class Window(QDialog):
         print("Click")
 
     def starting(self):
-        self.thread[1] = ThreadClass(parent = None)
-        self.thread[1].start() #need to tie this in to the functions that go with the login button
-        self.thread[1].any_signal.connect(self.myFunction)
-        self.notify.setEnabled(False) #disabled when clicked on this button
+        self.worker = WorkerThread()
+        self.worker.start()
+        self.worker.finished.connect(self.imDone)
+        self.notify.setEnabled(False)
 
-    def myFunction(self):
+    def imDone(self):
+        print("I'm done!!!!!")
+        self.notify.setEnabled(True)
+
         
-        #index = self.sender().index #thread class object 
+          
+                  
 
-        current_min = int(now.strftime("%M"))
-        current_sec = int(now.strftime("%S"))
+            
+class WorkerThread(QtCore.QThread):
+    def run(self):
+        while True:
+
+            now = datetime.now()
+
+
+
+            current_min = int(now.strftime("%M"))
+            current_sec = int(now.strftime("%S"))
 
 
             #pull from firebase  
         #uhour = int(self.user_hour.text());
         #umin = int(self.user_min.text());
-        usec = 00
+            usec = 00
 
-        userstr = (str(uHour)+":"+str(uMin)+":"+str(usec))
-
-        
-        userdiff = datetime.strptime(userstr, "%H:%M:%S")
+            userstr = (str(uHour)+":"+str(uMin)+":"+str(usec))
 
         
-        if (uMin == current_min) == True:
+            userdiff = datetime.strptime(userstr, "%H:%M:%S")
+
+        
+            if (uMin == current_min) == True:
                                 
-            msg=EmailMessage()
+                msg=EmailMessage()
                 #msg.set_content(body)
-            msg['subject']="Time to Take Medication"
-            msg['to'] = "banshoukeir@gwmail.gwu.edu"
-            msg['Hello']
+                msg['subject']="Time to Take Medication"
+                msg['to'] = "banshoukeir@gwmail.gwu.edu"
+                msg['Hello']
 
 
-            user = "encapsulate22@gmail.com"
+                user = "encapsulate22@gmail.com"
 
-            msg['from']=user
+                msg['from']=user
                 
-            password="ldlsyipkmdjnmxro"
+                password="ldlsyipkmdjnmxro"
 #gxfsicsrhpfgrvfw
 
-            server=smtplib.SMTP("smtp.gmail.com", 587)
-            server.starttls()
-            server.login(user, password)
-            server.send_message(msg)
+                server=smtplib.SMTP("smtp.gmail.com", 587)
+                server.starttls()
+                server.login(user, password)
+                server.send_message(msg)
 
-            server.quit()
-                  
-
-            
-class ThreadClass(QtCore.QThread):
-
-    any_signal = QtCore.pyqtSignal(int)
-    def __init__(self, parent = None):
-        super(ThreadClass, self).__init__(parent)
-        self.is_running = True
-    def run(self):
-        print("RUNNING!")
-    def stop(self):
-        print("Stopping")
-        self.terminate()
-
+                server.quit()
+                break
+                            
+           
 
 
 app = QApplication(sys.argv) #always need this to launch the app, pass command line arguments to it
