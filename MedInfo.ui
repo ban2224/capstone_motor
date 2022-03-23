@@ -6,338 +6,375 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>523</width>
-    <height>395</height>
+    <width>848</width>
+    <height>548</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background:rgb(156, 211, 255)</string>
+   <string notr="true">background:rgb(219, 236, 255)</string>
   </property>
-  <widget class="QLineEdit" name="m1">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>80</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:white</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="h1">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>80</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:white</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="m2">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>120</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:white</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="h2">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>120</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:white</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="m3">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>160</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:white</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="h3">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>160</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:white</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="m4">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>200</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:white</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="h4">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>200</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:white</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>70</x>
-     <y>50</y>
-     <width>71</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(84, 116, 197)</string>
-   </property>
-   <property name="text">
-    <string>Medication</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>50</y>
-     <width>91</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(84, 116, 197)</string>
-   </property>
-   <property name="text">
-    <string>Hour Dispense</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="submit">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>240</y>
-     <width>131</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(41, 92, 223)</string>
-   </property>
-   <property name="text">
-    <string>Submit Info</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="backtoMain3">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>300</y>
-     <width>131</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(158, 175, 130)</string>
-   </property>
-   <property name="text">
-    <string>Back to Main</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="verifyItsYou">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>300</y>
-     <width>131</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(173, 48, 62)</string>
-   </property>
-   <property name="text">
-    <string>Verify It's You</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>50</y>
-     <width>101</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(84, 116, 197)</string>
-   </property>
-   <property name="text">
-    <string>Minute Dispense</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="min1">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>80</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:white</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="min2">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>120</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:white</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="min3">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>160</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:white</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="min4">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>200</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:white</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>80</y>
-     <width>16</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(84, 116, 197)</string>
-   </property>
-   <property name="text">
-    <string>1</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>120</y>
-     <width>16</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(84, 116, 197)</string>
-   </property>
-   <property name="text">
-    <string>2</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>160</y>
-     <width>16</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(84, 116, 197)</string>
-   </property>
-   <property name="text">
-    <string>3</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_7">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>200</y>
-     <width>16</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(84, 116, 197)</string>
-   </property>
-   <property name="text">
-    <string>4</string>
-   </property>
-  </widget>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <item>
+    <widget class="QWidget" name="widget_5" native="true">
+     <widget class="QWidget" name="widget_4" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>12</y>
+        <width>33</width>
+        <height>112</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>33</x>
+        <y>12</y>
+        <width>149</width>
+        <height>162</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Medication</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="m1">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="m2">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="m3">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="m4">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>209</x>
+        <y>12</y>
+        <width>149</width>
+        <height>162</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Hour Dispense</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="h1">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="h2">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="h3">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="h4">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>386</x>
+        <y>12</y>
+        <width>149</width>
+        <height>162</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Minute Dispense</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="min1">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="min2">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="min3">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="min4">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widget_10" native="true">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>10</y>
+        <width>149</width>
+        <height>162</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>AM PM</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="ap1">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="min2_2">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="min3_2">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="min4_2">
+         <property name="styleSheet">
+          <string notr="true">background:white</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_6" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QWidget" name="widget_7" native="true">
+        <widget class="QPushButton" name="submit">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>80</y>
+           <width>220</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(190, 213, 255)</string>
+         </property>
+         <property name="text">
+          <string>Submit Info</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_8" native="true">
+        <widget class="QPushButton" name="pushButton">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>60</y>
+           <width>100</width>
+           <height>32</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Update</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_9" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="spacing">
+       <number>-1</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="backtoMain3">
+        <property name="styleSheet">
+         <string notr="true">background:rgb(255, 255, 255)</string>
+        </property>
+        <property name="text">
+         <string>Back to Main</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="DrugInfo">
+        <property name="styleSheet">
+         <string notr="true">background:rgb(255, 255, 255)</string>
+        </property>
+        <property name="text">
+         <string>Drugs.com</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="verifyItsYou">
+        <property name="styleSheet">
+         <string notr="true">background:rgb(255, 255, 255)</string>
+        </property>
+        <property name="text">
+         <string>Verify It's You</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Pharm">
+        <property name="styleSheet">
+         <string notr="true">background:rgb(255, 255, 255)</string>
+        </property>
+        <property name="text">
+         <string>Pharmacy</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

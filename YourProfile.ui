@@ -6,146 +6,175 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>356</height>
+    <width>537</width>
+    <height>387</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background:rgb(156, 211, 255)
+   <string notr="true">background:rgb(219, 236, 255)
 </string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>120</x>
-     <y>20</y>
-     <width>161</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 700 italic 23pt &quot;Georgia&quot;;</string>
-   </property>
-   <property name="text">
-    <string>Your profile!</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="bmain1">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>311</y>
-     <width>101</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(184, 210, 146)</string>
-   </property>
-   <property name="text">
-    <string>Back to Main</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="bmain1_2">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>270</y>
-     <width>101</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background: rgb(84, 116, 197)</string>
-   </property>
-   <property name="text">
-    <string>Update Profile</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>70</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background: white
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QWidget" name="widget_2" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 700 italic 23pt &quot;Georgia&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Your profile!</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_4" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QWidget" name="widget_5" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>First Name</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_6" native="true"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="firstname">
+        <property name="styleSheet">
+         <string notr="true">background: white
 </string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>170</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background: white
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_7" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_8" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QWidget" name="widget_9" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Last Name</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_10" native="true"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lastname">
+        <property name="styleSheet">
+         <string notr="true">background: white
 </string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_5">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>120</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background: white
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_11" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_12" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QWidget" name="widget_13" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Date of Birth</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_14" native="true"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="DOB">
+        <property name="styleSheet">
+         <string notr="true">background: white
 </string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>70</y>
-     <width>81</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>First Name</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>120</y>
-     <width>81</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Last Name</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>170</y>
-     <width>91</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Date of Birth</string>
-   </property>
-  </widget>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_15" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_16" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QWidget" name="widget_17" native="true"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bmain1_2">
+        <property name="styleSheet">
+         <string notr="true">background:rgb(248, 251, 255)</string>
+        </property>
+        <property name="text">
+         <string>Update Profile</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_18" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_19" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QPushButton" name="bmain1">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(190, 213, 255)</string>
+        </property>
+        <property name="text">
+         <string>Back to Main</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_20" native="true"/>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_21" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

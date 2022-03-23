@@ -6,80 +6,112 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>366</width>
+    <height>334</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background: rgb(156, 211, 255)</string>
+   <string notr="true">background:rgb(219, 236, 255)</string>
   </property>
-  <widget class="QPushButton" name="profilebutton">
-   <property name="geometry">
-    <rect>
-     <x>99</x>
-     <y>90</y>
-     <width>181</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(17, 85, 204)</string>
-   </property>
-   <property name="text">
-    <string>Your Profile</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="medinfobutton">
-   <property name="geometry">
-    <rect>
-     <x>100</x>
-     <y>150</y>
-     <width>181</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(17, 85, 204)</string>
-   </property>
-   <property name="text">
-    <string>Medication Information</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="loutmain">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>240</y>
-     <width>100</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(156, 184, 56)</string>
-   </property>
-   <property name="text">
-    <string>Log out</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>20</y>
-     <width>111</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 700 italic 20pt &quot;Georgia&quot;;</string>
-   </property>
-   <property name="text">
-    <string>Welcome!</string>
-   </property>
-  </widget>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QWidget" name="widget_2" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 700 italic 20pt &quot;Georgia&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Welcome!</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_10" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QWidget" name="widget_4" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QWidget" name="widget_5" native="true"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="profilebutton">
+           <property name="styleSheet">
+            <string notr="true">background:rgb(248, 251, 255)</string>
+           </property>
+           <property name="text">
+            <string>Your Profile</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_6" native="true"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_7" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QWidget" name="widget_8" native="true"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="medinfobutton">
+           <property name="styleSheet">
+            <string notr="true">background:rgb(248, 251, 255)</string>
+           </property>
+           <property name="text">
+            <string>Medication Information</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_9" native="true"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_11" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QPushButton" name="loutmain">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(190, 213, 255)</string>
+        </property>
+        <property name="text">
+         <string>Log out</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_12" native="true"/>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_13" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

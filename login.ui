@@ -6,154 +6,198 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>410</width>
-    <height>399</height>
+    <width>318</width>
+    <height>428</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background:rgb(156, 211, 255)</string>
+   <string notr="true">background:rgb(219, 236, 255)</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>157</x>
-     <y>19</y>
-     <width>111</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 700 italic 26pt &quot;Georgia&quot;;</string>
-   </property>
-   <property name="text">
-    <string>Login</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>130</y>
-     <width>61</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(84, 116, 197)</string>
-   </property>
-   <property name="text">
-    <string>Password</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>80</y>
-     <width>91</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(84, 116, 197)</string>
-   </property>
-   <property name="text">
-    <string>Email Address</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="ea_lo">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>80</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(255, 255, 255)</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="pw_lo">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>130</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(255, 255, 255)</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="loginbutton">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>190</y>
-     <width>100</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(17, 85, 204)</string>
-   </property>
-   <property name="text">
-    <string>Login!</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>250</y>
-     <width>161</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(98, 91, 72)</string>
-   </property>
-   <property name="text">
-    <string>Don't have an account?</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="backtoSU">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>280</y>
-     <width>100</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background:rgb(17, 85, 204)</string>
-   </property>
-   <property name="text">
-    <string>Sign up!</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="errormessage">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>160</y>
-     <width>241</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: red</string>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff000f;&quot;&gt;Incorrect username and/or password&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QWidget" name="widget_2" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 700 italic 26pt &quot;Georgia&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Login</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_12" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QWidget" name="widget_4" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QWidget" name="widget_5" native="true"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">font: 13pt &quot;.AppleSystemUIFont&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Email Address</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_6" native="true"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="ea_lo">
+           <property name="styleSheet">
+            <string notr="true">background:rgb(255, 255, 255)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_7" native="true"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_8" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QWidget" name="widget_9" native="true"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Password</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_10" native="true"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="pw_lo">
+           <property name="styleSheet">
+            <string notr="true">background:rgb(255, 255, 255)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_11" native="true"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_13" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QWidget" name="widget_14" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="errormessage">
+        <property name="styleSheet">
+         <string notr="true">font: red</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff000f;&quot;&gt;Incorrect username and/or password&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_15" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_16" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QWidget" name="widget_17" native="true"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="loginbutton">
+        <property name="styleSheet">
+         <string notr="true">background:rgb(248, 251, 255)</string>
+        </property>
+        <property name="text">
+         <string>Login!</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_18" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_19" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QWidget" name="widget_20" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">background:rgb(255, 242, 235)</string>
+        </property>
+        <property name="text">
+         <string>Don't have an account?</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_21" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_22" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QWidget" name="widget_23" native="true"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="backtoSU">
+        <property name="styleSheet">
+         <string notr="true">background:rgb(248, 251, 255)</string>
+        </property>
+        <property name="text">
+         <string>Sign up!</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_24" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

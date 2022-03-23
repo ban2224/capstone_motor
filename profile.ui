@@ -14,20 +14,19 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background: rgb(180, 255, 229)
-</string>
+   <string notr="true">background:rgb(219, 236, 255)</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>150</x>
-     <y>10</y>
-     <width>58</width>
+     <y>20</y>
+     <width>71</width>
      <height>16</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background:rgb(17, 85, 204)</string>
+    <string notr="true">font: 700 italic 20pt &quot;Georgia&quot;;</string>
    </property>
    <property name="text">
     <string>Profile</string>
@@ -38,13 +37,12 @@
     <rect>
      <x>40</x>
      <y>70</y>
-     <width>101</width>
+     <width>111</width>
      <height>16</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background: blue
-</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>Medication name</string>
@@ -60,7 +58,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background: blue</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>Number of pills</string>
@@ -102,7 +100,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background:blue</string>
+    <string notr="true">background:rgb(248, 251, 255)</string>
    </property>
    <property name="text">
     <string>PushButton</string>
