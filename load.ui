@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>452</width>
+    <height>442</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:rgb(219, 236, 255)</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QWidget" name="widget_2" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 700 italic 26pt &quot;Georgia&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Loading</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_4" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QWidget" name="widget_5" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">font: 700 italic 14pt &quot;Georgia&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Email</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_6" native="true"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="styleSheet">
+         <string notr="true">background-color:white</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_7" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_8" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">font: 700 italic 14pt &quot;Georgia&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Med1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_10" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="med1">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_11" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">font: 700 italic 14pt &quot;Georgia&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Count</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_40" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="c1">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_12" native="true"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="s1">
+        <property name="styleSheet">
+         <string notr="true">background-color:white</string>
+        </property>
+        <property name="text">
+         <string>start</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_9" native="true"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="f1">
+        <property name="styleSheet">
+         <string notr="true">background-color:white</string>
+        </property>
+        <property name="text">
+         <string>finish</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_14" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">font: 700 italic 14pt &quot;Georgia&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Med2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_16" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="med2">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_17" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="styleSheet">
+         <string notr="true">font: 700 italic 14pt &quot;Georgia&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Count</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_41" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="c2">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_18" native="true"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="s2">
+        <property name="styleSheet">
+         <string notr="true">background-color:white</string>
+        </property>
+        <property name="text">
+         <string>start</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_13" native="true"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="f2">
+        <property name="styleSheet">
+         <string notr="true">background-color:white</string>
+        </property>
+        <property name="text">
+         <string>finish</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_20" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_12">
+        <property name="styleSheet">
+         <string notr="true">font: 700 italic 14pt &quot;Georgia&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Med3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_27" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="med3">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_28" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_13">
+        <property name="styleSheet">
+         <string notr="true">font: 700 italic 14pt &quot;Georgia&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Count</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_42" native="true"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="c3">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_29" native="true"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="s3">
+        <property name="styleSheet">
+         <string notr="true">background-color:white</string>
+        </property>
+        <property name="text">
+         <string>start</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_15" native="true"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="f3">
+        <property name="styleSheet">
+         <string notr="true">background-color:white</string>
+        </property>
+        <property name="text">
+         <string>finish</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_37" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QWidget" name="widget_38" native="true"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="back">
+        <property name="styleSheet">
+         <string notr="true">background-color:white</string>
+        </property>
+        <property name="text">
+         <string>Main Menu</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_39" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>357</width>
-    <height>378</height>
+    <width>581</width>
+    <height>632</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -62,8 +62,7 @@ font: 700 italic 25pt &quot;Georgia&quot;;
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">
-</string>
+             <string notr="true"/>
             </property>
             <property name="text">
              <string>Email</string>
@@ -147,12 +146,38 @@ font: 700 italic 25pt &quot;Georgia&quot;;
        <widget class="QWidget" name="widget_5" native="true"/>
       </item>
       <item>
-       <widget class="QPushButton" name="verifybutton">
+       <widget class="QPushButton" name="Med1">
         <property name="styleSheet">
          <string notr="true">background-color:rgb(190, 213, 255)</string>
         </property>
         <property name="text">
-         <string>Verify</string>
+         <string>Med1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_13" native="true"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Med2">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(190, 213, 255)</string>
+        </property>
+        <property name="text">
+         <string>Med2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_16" native="true"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Med3">
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(190, 213, 255)</string>
+        </property>
+        <property name="text">
+         <string>Med3</string>
         </property>
        </widget>
       </item>
