@@ -43,6 +43,28 @@
     <widget class="QWidget" name="widget_10" native="true">
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
+       <widget class="QWidget" name="widget_14" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QWidget" name="widget_15" native="true"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="styleSheet">
+            <string notr="true">background:rgb(248, 251, 255)</string>
+           </property>
+           <property name="text">
+            <string>Your Profile</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_16" native="true"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
        <widget class="QWidget" name="widget_4" native="true">
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
@@ -54,12 +76,34 @@
             <string notr="true">background:rgb(248, 251, 255)</string>
            </property>
            <property name="text">
-            <string>Your Profile</string>
+            <string>Update Profile</string>
            </property>
           </widget>
          </item>
          <item>
           <widget class="QWidget" name="widget_6" native="true"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_17" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QWidget" name="widget_18" native="true"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="load">
+           <property name="styleSheet">
+            <string notr="true">background-color:white</string>
+           </property>
+           <property name="text">
+            <string>Load</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_19" native="true"/>
          </item>
         </layout>
        </widget>
